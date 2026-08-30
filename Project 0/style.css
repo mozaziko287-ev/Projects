@@ -1,0 +1,573 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Caacupe One", sans-serif;
+    background-color: #fff;
+    color: #222;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    min-height: 70px;
+    background-color: #0d66d3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 40px;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.header-links a:hover {
+    background-color: #2386fe;
+}
+
+.header-links button {
+    background-color: #ee626b;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header-links button:hover {
+    background-color: #f2858c;
+}
+
+
+/* =========================
+   LANDING PAGE
+========================= */
+
+.landing-page {
+    width: 100%;
+    min-height: 360px;
+
+    background-color: #4c9cff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 45px 70px;
+
+    color: white;
+
+    border-radius: 0 0 50px 50px;
+}
+
+.landing-page-left-sect {
+    width: 55%;
+}
+
+.landing-page-left-sect h1 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.landing-page-left-sect p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.landing-page-search {
+    position: relative;
+    width: 380px;
+    margin-top: 25px;
+}
+
+.landing-page-search input {
+    width: 100%;
+    height: 45px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 25px;
+
+    padding: 10px 120px 10px 18px;
+}
+
+.landing-page-search button {
+    position: absolute;
+
+    right: 5px;
+    top: 5px;
+
+    height: 35px;
+
+    background-color: #ee626b;
+    color: white;
+
+    border: none;
+
+    padding: 0 20px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.landing-page-search button:hover {
+    background-color: #f2858c;
+}
+
+
+/* =========================
+   LANDING IMAGE
+========================= */
+
+.landing-page-image-container {
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page-image-container img {
+    width: 240px;
+    height: 240px;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   POPULAR FLIGHTS
+========================= */
+
+.poplur-container {
+    width: 100%;
+    padding: 50px 50px 70px;
+}
+
+.poplur-container > span {
+    display: block;
+
+    color: #ee626b;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.poplur-flishts {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.poplur-flishts h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #111;
+}
+
+.poplur-flishts button {
+    background-color: #ee626b;
+    color: white;
+
+    border: none;
+
+    padding: 9px 22px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.poplur-flishts button:hover {
+    background-color: #f2858c;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards-container {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    width: 100%;
+    min-width: 0;
+
+    background-color: #fff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   CARD IMAGE
+========================= */
+
+.card > img {
+    width: 100%;
+    height: 160px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   CARD INFO
+========================= */
+
+.card-info {
+    min-height: 85px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 18px;
+
+    background-color: #eeeeee;
+}
+
+.card-info-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    min-width: 0;
+}
+
+.card-info-text span {
+    color: #ee626b;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.card-info-text h3 {
+    color: #111;
+
+    font-size: 18px;
+
+    margin: 0;
+}
+
+
+/* =========================
+   CART BUTTON
+========================= */
+
+.cart-button {
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #fff;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.cart-button img {
+    width: 24px !important;
+    height: 24px !important;
+
+    object-fit: contain;
+
+    padding: 0 !important;
+}
+
+.cart-button:hover {
+    background-color: #0d66d3;
+}
+
+.cart-button:hover img {
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .landing-page {
+        padding: 40px;
+    }
+
+    .poplur-container {
+        padding: 40px 35px 60px;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .header {
+        min-height: 60px;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        width: 55px;
+    }
+
+    .header-links {
+        gap: 2px;
+    }
+
+    .header-links a {
+        padding: 6px 8px;
+        font-size: 13px;
+    }
+
+    .header-links button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+
+    /* LANDING */
+
+    .landing-page {
+        flex-direction: column;
+        text-align: center;
+
+        padding: 35px 20px;
+
+        min-height: auto;
+    }
+
+    .landing-page-left-sect {
+        width: 100%;
+    }
+
+    .landing-page-left-sect h1 {
+        font-size: 30px;
+    }
+
+    .landing-page-left-sect p {
+        font-size: 15px;
+    }
+
+
+    /* SEARCH */
+
+    .landing-page-search {
+        width: 100%;
+        max-width: 380px;
+
+        margin: 20px auto;
+    }
+
+
+    /* IMAGE */
+
+    .landing-page-image-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .landing-page-image-container img {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    /* POPULAR */
+
+    .poplur-container {
+        padding: 35px 15px 50px;
+    }
+
+    .poplur-flishts {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 15px;
+
+        margin-bottom: 25px;
+    }
+
+    .poplur-flishts h1 {
+        font-size: 25px;
+    }
+
+
+    /* CARDS */
+
+    .cards-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+    .card > img {
+        height: 120px;
+    }
+
+    .card-info {
+        min-height: 85px;
+        padding: 10px;
+    }
+
+    .card-info-text {
+        gap: 3px;
+    }
+
+    .card-info-text span {
+        font-size: 11px;
+    }
+
+    .card-info-text h3 {
+        font-size: 15px;
+    }
+
+    .cart-button {
+        width: 34px;
+        height: 34px;
+    }
+
+    .cart-button img {
+        width: 19px !important;
+        height: 19px !important;
+    }
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .poplur-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .cards-container {
+        gap: 10px;
+    }
+
+    .card > img {
+        height: 110px;
+    }
+
+    .card-info {
+        padding: 8px;
+    }
+
+    .card-info-text h3 {
+        font-size: 14px;
+    }
+
+    .cart-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cart-button img {
+        width: 17px !important;
+        height: 17px !important;
+    }
+}
